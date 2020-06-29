@@ -136,3 +136,60 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 } 
+
+/*Tracker page*/
+
+.tracker-content-wrapper {
+    display: flex;
+}
+
+.tracker-left {
+    width: 400px;
+}
+
+.item-tracker, .mask-tracker {
+    width: 100%;
+    height: 322px;
+    position: relative;
+    background-image: url('images/item_inventory_edited.png');
+    background-size: 100%;
+}
+
+.mask-tracker {
+    background-image: url('images/mask_inventory.png');
+    height: 312px;
+}
+
+table.item-sprites, table.mask-sprites, table.bottles {
+    position: absolute;
+}
+
+/*table.item-sprites td:first-child img {
+    margin-left: 13px;
+    margin-right: 2px;
+}*/
+
+table.item-sprites img {
+    padding-top: 13px;
+    width: 60px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+table.bottles {
+    bottom: 15px;
+}
+
+table.bottles img {
+    padding-top: 13px;
+    width: 60px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+table.mask-sprites img {
+    padding-top: 17px;
+    width: 55px;
+    margin-left: 8.5px;
+    cursor: pointer;
+}
