@@ -168,7 +168,7 @@ input:checked + .slider:before {
 
 .mask-tracker {
     background-image: url('images/mask_inventory.png');
-    padding: 0 0;
+    padding-bottom: 2.2%;
 }
 
 table.item-sprites {
@@ -208,11 +208,11 @@ table.mask-sprites td {
 
 table.mask-sprites img {
     width: 83%;
-    padding: 16% 0;
+    padding: 18.5% 0;
 }
 
 .gear-item-tracker-container {
-    width: 22.5%;
+    width: 22.7%;
 }
 
 .kafei-item-tracker {
@@ -220,7 +220,7 @@ table.mask-sprites img {
     background-repeat: no-repeat;
     width: 100%;
     background-size: 100%;
-    padding: 7% 0;
+    padding: 6.9% 0;
 }
 
 table.kafei-sprites {
@@ -241,7 +241,7 @@ table.kafei-sprites img {
 /*- Dynamic tables end -*/
 
 .song-tracker {
-    width: 21.25%;
+    width: 21.8%;
 }
 
 .song-tracker img {
