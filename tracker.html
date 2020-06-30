@@ -7,85 +7,101 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="tracker-content-wrapper content-wrapper">
         <div class="tracker-left">
-            <div class="item-tracker">
-                <table class="item-sprites">
-                    <tr>
-                        <td><img src="images/classic_sprites/ocarina.png" alt="ocarina"></td>
-                        <td><img src="images/classic_sprites/bow.png" alt="bow"></td>
-                        <td><img src="images/classic_sprites/fire_arrow.png" alt="fire arrow"></td>
-                        <td><img src="images/classic_sprites/ice_arrow.png" alt="ice arrow"></td>
-                        <td><img src="images/classic_sprites/light_arrow.png" alt="light arrow"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/classic_sprites/bombs.png" alt="bombs"></td>
-                        <td><img src="images/classic_sprites/bombchu.png" alt="bombchu"></td>
-                        <td><img src="images/classic_sprites/deku_stick.png" alt="deku stick"></td>
-                        <td><img src="images/classic_sprites/deku_nut.png" alt="deku nut"></td>
-                        <td><img src="images/classic_sprites/magic_bean.png" alt="magic bean"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/classic_sprites/powder_keg.png" alt="powder_keg"></td>
-                        <td><img src="images/classic_sprites/picto_box.png" alt="picto_box"></td>
-                        <td><img src="images/classic_sprites/lens_of_truth.png" alt="lens_of_truth"></td>
-                        <td><img src="images/classic_sprites/hookshot.png" alt="hookshot"></td>
-                        <td><img src="images/classic_sprites/great_fairys_sword.png" alt="great fairy sword"></td>
-                    </tr>
-                </table>
-                <table class="bottles">
-                    <tr>
-                        <td><img src="images/classic_sprites/bottle_empty.png" alt="empty bottle"></td>
-                        <td><img src="images/classic_sprites/bottle_empty.png" alt="empty bottle"></td>
-                        <td><img src="images/classic_sprites/bottle_empty.png" alt="empty bottle"></td>
-                        <td><img src="images/classic_sprites/bottle_empty.png" alt="empty bottle"></td>
-                        <td><img src="images/classic_sprites/bottle_empty.png" alt="empty bottle"></td>
-                        <td><img src="images/classic_sprites/bottle_empty.png" alt="empty bottle"></td>
-                    </tr>
-                </table>
+            <div class="item-tracker-container">
+                <div class="item-tracker">
+                    <table class="item-sprites">
+                        <tr>
+                            <td><img class="sprite" src="images/3ds_sprites/ocarina.png" alt="ocarina"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/bow.png" alt="bow"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/fire_arrow.png" alt="fire arrow"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/ice_arrow.png" alt="ice arrow"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/light_arrow.png" alt="light arrow"></td>
+                        </tr>
+                        <tr>
+                            <td><img class="sprite" src="images/3ds_sprites/bombs.png" alt="bombs"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/bombchu.png" alt="bombchu"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/deku_stick.png" alt="deku stick"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/deku_nut.png" alt="deku nut"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/magic_bean.png" alt="magic bean"></td>
+                        </tr>
+                        <tr>
+                            <td><img class="sprite" src="images/3ds_sprites/powder_keg.png" alt="powder_keg"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/picto_box.png" alt="picto_box"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/lens_of_truth.png" alt="lens_of_truth"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/hookshot.png" alt="hookshot"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/great_fairys_sword.png" alt="great fairy sword"></td>
+                        </tr>
+                    </table>
+                    <table class="bottles">
+                        <tr>
+                            <td><img class="sprite" src="images/3ds_sprites/bottle_red_potion.png" alt="empty bottle"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/bottle_gold_dust.png" alt="empty bottle"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/bottle_milk.png" alt="empty bottle"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/bottle_chateau_romani.png" alt="empty bottle"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/bottle_empty.png" alt="empty bottle"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/bottle_empty.png" alt="empty bottle"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="mask-tracker">
+                    <table class="mask-sprites">
+                        <tr>
+                            <td><img class="sprite" src="images/3ds_sprites/postmans_hat.png" alt="postmans hat"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/all_night_mask.png" alt="all night mask"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/blast_mask.png" alt="blast mask"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/stone_mask.png" alt="stone mask"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/great_fairy_mask.png" alt="great fairy mask"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/deku_mask.png" alt="deku mask"></td>
+                        </tr>
+                        <tr>
+                            <td><img class="sprite" src="images/3ds_sprites/keaton_mask.png" alt="keaton mask"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/bremen_mask.png" alt="bremen mask"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/bunny_hood.png" alt="bunny hood"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/don_geros_mask.png" alt="don geros mask"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/mask_of_scents.png" alt="mask of scents"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/goron_mask.png" alt="goron mask"></td>
+                        </tr>
+                        <tr>
+                            <td><img class="sprite" src="images/3ds_sprites/romanis_mask.png" alt="romanis mask"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/circus_leaders_mask.png" alt="circus leaders mask"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/kafeis_mask.png" alt="kafeis mask"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/couples_mask.png" alt="couples mask"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/mask_of_truth.png" alt="mask of truth"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/zora_mask.png" alt="zora mask"></td>
+                        </tr>
+                        <tr>
+                            <td><img class="sprite" src="images/3ds_sprites/kamaros_mask.png" alt="kamaros mask"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/gibdo_mask.png" alt="gibdo mask"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/garos_mask.png" alt="garos mask"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/captains_hat.png" alt="captains_hat"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/giants_mask.png" alt="giants mask"></td>
+                            <td><img class="sprite" src="images/3ds_sprites/fierce_deity_mask.png" alt="fierce deity"></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <div class="mask-tracker">
-                <table class="mask-sprites">
-                    <tr>
-                        <td><img src="images/classic_sprites/postmans_hat.png" alt="postmans hat"></td>
-                        <td><img src="images/classic_sprites/all_night_mask.png" alt="all night mask"></td>
-                        <td><img src="images/classic_sprites/blast_mask.png" alt="blast mask"></td>
-                        <td><img src="images/classic_sprites/stone_mask.png" alt="stone mask"></td>
-                        <td><img src="images/classic_sprites/great_fairy_mask.png" alt="great fairy mask"></td>
-                        <td><img src="images/classic_sprites/deku_mask.png" alt="deku mask"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/classic_sprites/keaton_mask.png" alt="keaton mask"></td>
-                        <td><img src="images/classic_sprites/bremen_mask.png" alt="bremen mask"></td>
-                        <td><img src="images/classic_sprites/bunny_hood.png" alt="bunny hood"></td>
-                        <td><img src="images/classic_sprites/don_geros_mask.png" alt="don geros mask"></td>
-                        <td><img src="images/classic_sprites/mask_of_scents.png" alt="mask of scents"></td>
-                        <td><img src="images/classic_sprites/goron_mask.png" alt="goron mask"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/classic_sprites/romanis_mask.png" alt="romanis mask"></td>
-                        <td><img src="images/classic_sprites/circus_leaders_mask.png" alt="circus leaders mask"></td>
-                        <td><img src="images/classic_sprites/kafeis_mask.png" alt="kafeis mask"></td>
-                        <td><img src="images/classic_sprites/couples_mask.png" alt="couples mask"></td>
-                        <td><img src="images/classic_sprites/mask_of_truth.png" alt="mask of truth"></td>
-                        <td><img src="images/classic_sprites/zora_mask.png" alt="zora mask"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/classic_sprites/kamaros_mask.png" alt="kamaros mask"></td>
-                        <td><img src="images/classic_sprites/gibdo_mask.png" alt="gibdo mask"></td>
-                        <td><img src="images/classic_sprites/garos_mask.png" alt="garos mask"></td>
-                        <td><img src="images/classic_sprites/captains_hat.png" alt="captains_hat"></td>
-                        <td><img src="images/classic_sprites/giants_mask.png" alt="giants mask"></td>
-                        <td><img src="images/classic_sprites/fierce_deity.png" alt="fierce deity"></td>
-                    </tr>
-                </table>
+            <div class="song-tracker">
+                <img class="sprite" src="images/song_sprites/song_of_time.png" alt="Song of time">
+                <img class="sprite" src="images/song_sprites/song_of_healing.png" alt="Song of healing">
+                <img class="sprite" src="images/song_sprites/eponas_song.png" alt="Eponas song">
+                <img class="sprite" src="images/song_sprites/song_of_soaring.png" alt="Song of soaring">
+                <img class="sprite" src="images/song_sprites/song_of_storms.png" alt="Song of storms">
+                <img class="sprite" src="images/song_sprites/sonata_of_awakening.png" alt="Sonata of awakening">
+                <img class="sprite" src="images/song_sprites/goron_lullaby.png" alt="Goron lullaby">
+                <img class="sprite" src="images/song_sprites/new_wave_bossa_nova.png" alt="New wave bossa nova">
+                <img class="sprite" src="images/song_sprites/elegy_of_emptiness.png" alt="Elegy of emptiness">
+                <img class="sprite" src="images/song_sprites/oath_to_order.png" alt="Oath to order">
             </div>
         </div>
         <div class="tracker-right">
 
         </div>
     </div>
+    <script src="scripts/toggle.js"></script>
 </body>
 </html>
