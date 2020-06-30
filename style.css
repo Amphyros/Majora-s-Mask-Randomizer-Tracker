@@ -1,6 +1,10 @@
 /*Defaults*/
 * { margin: 0 }
 
+h1, h2, h3, h4, h5, h6, p, a, li {
+    margin: 0;
+}
+
 html {
     font-size: 16px;
 }
@@ -199,12 +203,39 @@ table.mask-sprites {
 }
 
 table.mask-sprites td {
-    text-align:center;
+    text-align: center;
 }
 
 table.mask-sprites img {
     width: 83%;
     padding: 16% 0;
+}
+
+.gear-item-tracker-container {
+    width: 22.5%;
+}
+
+.kafei-item-tracker {
+    background-image: url('images/item_row.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100%;
+    padding: 7% 0;
+}
+
+table.kafei-sprites {
+    width: 100%;
+}
+
+table.kafei-sprites img {
+    width: 65%;
+    padding: 10% 0;
+    margin: 0 auto;
+}
+
+.kafei-item-tracker img {
+    display: block;
+    width: 100%;
 }
 
 /*- Dynamic tables end -*/
@@ -218,11 +249,9 @@ table.mask-sprites img {
     width: 100%;
 }
 
-.kafei-item-tracker {
-    background: url('images/item_row_horizontal.png');
-    width: 100%;
-    height: 50px;
-    background-size: 100%;
+#item-name {
+    font-size: 100%;
+    text-align: center;
 }
 
 .sprite {
