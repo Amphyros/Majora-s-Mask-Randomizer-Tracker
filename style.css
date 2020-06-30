@@ -149,11 +149,11 @@ input:checked + .slider:before {
 
 .tracker-left {
     display: flex;
-    width: 30%
+    width: 20%
 }
 
 .item-tracker-container {
-    width: 100%;
+    width: 69.5%;
 }
 
 /*- Dynamic tables -*/
@@ -163,12 +163,11 @@ input:checked + .slider:before {
     position: relative;
     background-image: url('images/item_inventory_edited.png');
     background-size: 100%;
-    padding: 5px 6px;
+    padding: 1% 1%;
 }
 
 .mask-tracker {
     background-image: url('images/mask_inventory.png');
-    padding-bottom: 2.2%;
 }
 
 table.item-sprites {
@@ -212,15 +211,15 @@ table.mask-sprites img {
 }
 
 .gear-item-tracker-container {
-    width: 22.7%;
+    width: 15.5%;
 }
 
 .kafei-item-tracker {
     background-image: url('images/item_row.png');
     background-repeat: no-repeat;
     width: 100%;
-    background-size: 100%;
-    padding: 6.9% 0;
+    background-size: 100% 100%;
+    padding: 10% 0;
 }
 
 table.kafei-sprites {
@@ -241,7 +240,7 @@ table.kafei-sprites img {
 /*- Dynamic tables end -*/
 
 .song-tracker {
-    width: 21.8%;
+    width: 15%;
 }
 
 .song-tracker img {
