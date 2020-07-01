@@ -148,12 +148,20 @@ input:checked + .slider:before {
 }
 
 .tracker-left {
+    width: 30%;
+}
+
+.item-tracker-upper {
     display: flex;
-    width: 20%
+}
+
+.item-tracker-lower {
+    width: 100%;
 }
 
 .item-tracker-container {
     width: 69.5%;
+    background: #396b62;
 }
 
 /*- Dynamic tables -*/
@@ -163,6 +171,7 @@ input:checked + .slider:before {
     position: relative;
     background-image: url('images/item_inventory_edited.png');
     background-size: 100%;
+    background-repeat: no-repeat;
     padding: 1% 1%;
 }
 
@@ -237,6 +246,25 @@ table.kafei-sprites img {
     width: 100%;
 }
 
+.miscellaneous-tracker {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.miscellaneous {
+    background-image: url('images/item_row_horizontal_1.png');
+    background-size: 100% 100%;
+    width: 50%;
+    padding: 2% 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.miscellaneous img {
+    width: 20%;
+}
+
 /*- Dynamic tables end -*/
 
 .song-tracker {
@@ -255,6 +283,6 @@ table.kafei-sprites img {
 
 .sprite {
     opacity: 0.3;
-    filter: grayscale(100%);
+    filter: grayscale(80%);
     cursor: pointer;
 }
