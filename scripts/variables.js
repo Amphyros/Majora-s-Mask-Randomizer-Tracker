@@ -37,28 +37,28 @@ var items = {
     'Bremen mask': 0,
     'Bunny hood': 0,
     'Don Gero\'s mask': 0,
-    'Mask of Scents': 0,
+    'Mask of scents': 0,
     'Goron mask': 0,
     'Romani\'s mask': 0,
-    'Circus leaders\'s mask': 0,
+    'Circus leader\'s mask': 0,
     'Kafei\'s mask': 0,
     'Couple\'s mask': 0,
     'Mask of truth': 0,
     'Zora mask': 0,
     'Kamaro\'s mask': 0,
-    'Gibdo\'s mask': 0,
+    'Gibdo mask': 0,
     'Garo\'s mask': 0,
     'Captain\'s hat': 0,
     'Giant\'s mask': 0,
     'Fierce deity mask': 0,
 
     'Moon\'s tear': 0,
-    'Land deed': 0,
+    'Town deed': 0,
     'Swamp deed': 0,
     'Mountain deed': 0,
     'Ocean deed': 0,
     'Room key': 0,
-    'Letter for Kafei': 0,
+    'Letter to Kafei': 0,
     'Pendant of memories': 0,
     'Express mail': 0,
     'Bomber\'s notebook': 0,
@@ -85,7 +85,7 @@ var items = {
     'GBT boss key': 0,
     'STT boss key': 0,
 
-    'Temple of time': 0,
+    'Song of time': 0,
     'Song of healing': 0,
     'Epona\'s song': 0,
     'Song of soaring': 0,
@@ -95,4 +95,63 @@ var items = {
     'New wave bossa nova': 0,
     'Elegy of emptyness': 0,
     'Oath to order': 0
+}
+
+var progressiveItems = {
+    "Hero\'s bow": {
+        "image": "bow",
+        "maxValue": 3
+    },
+    "Bombs": {
+        "image": "bombs",
+        "maxValue": 3
+    },
+    "Sword": {
+        "image": "sword",
+        "maxValue": 3
+    },
+    "Shield": {
+        "image": "shield",
+        "maxValue": 2
+    },
+    "Magic": {
+        "image": "magic",
+        "maxValue": 2
+    },
+    "Swamp skulltula": {
+        "image": "swamp_skulltula",
+        "maxValue": 30
+    },
+    "Ocean skulltula": {
+        "image": "ocean_skulltula",
+        "maxValue": 30
+    },
+    "WFT fairy": {
+        "image": "wft_fairy",
+        "maxValue": 15
+    },
+    "SHT fairy": {
+        "image": "sht_fairy",
+        "maxValue": 15
+    },
+    "GBT fairy": {
+        "image": "gbt_fairy",
+        "maxValue": 15
+    },
+    "STT fairy": {
+        "image": "stt_fairy",
+        "maxValue": 15
+    },
+    "SHT small key": {
+        "image": "sht_small_key",
+        "maxValue": 3
+    },
+    "STT small key": {
+        "image": "stt_small_key",
+        "maxValue": 4
+    }
+}
+
+var options = {
+    'sprites': '3ds'
 }
