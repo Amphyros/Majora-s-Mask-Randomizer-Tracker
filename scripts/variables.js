@@ -119,35 +119,35 @@ var progressiveItems = {
         "maxValue": 2
     },
     "Swamp skulltula": {
-        "image": "swamp_skulltula",
+        "image": "skulltula_swamp",
         "maxValue": 30
     },
     "Ocean skulltula": {
-        "image": "ocean_skulltula",
+        "image": "skulltula_ocean",
         "maxValue": 30
     },
     "WFT fairy": {
-        "image": "wft_fairy",
+        "image": "fairy_pink",
         "maxValue": 15
     },
     "SHT fairy": {
-        "image": "sht_fairy",
+        "image": "fairy_green",
         "maxValue": 15
     },
     "GBT fairy": {
-        "image": "gbt_fairy",
+        "image": "fairy_blue",
         "maxValue": 15
     },
     "STT fairy": {
-        "image": "stt_fairy",
+        "image": "fairy_yellow",
         "maxValue": 15
     },
     "SHT small key": {
-        "image": "sht_small_key",
+        "image": "small_key",
         "maxValue": 3
     },
     "STT small key": {
-        "image": "stt_small_key",
+        "image": "small_key",
         "maxValue": 4
     }
 }
