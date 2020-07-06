@@ -157,6 +157,7 @@ input:checked + .slider:before {
 
 .item-tracker-lower {
     width: 100%;
+    position: relative;
 }
 
 .item-tracker-container {
@@ -252,6 +253,13 @@ table.kafei-sprites img {
     width: 100%;
 }
 
+.scoop-tracker {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .miscellaneous {
     background-image: url('images/item_row_horizontal_1.png');
     background-size: 100% 100%;
@@ -261,8 +269,31 @@ table.kafei-sprites img {
     justify-content: space-between;
 }
 
+.scoops {
+    background-image: url('images/item_row_horizontal_2.png');
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2% 0;
+}
+
+.scoop {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .miscellaneous img {
     width: 20%;
+}
+
+.scoops img {
+    width: 39%;
+}
+
+.scoops i {
+    font-size: 1.5rem;
+    color: #baa976;
 }
 
 /*- Dynamic tables end -*/
@@ -279,6 +310,23 @@ table.kafei-sprites img {
 #item-name {
     font-size: 100%;
     text-align: center;
+}
+
+#bottleToggleButton {
+    width: 8%;
+    position: absolute;
+    top: 22%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.8;
+    filter: grayscale(50%);
+} #bottleToggleButton:hover {
+    opacity: 1;
+    filter: grayscale(0%);
 }
 
 .sprite {
