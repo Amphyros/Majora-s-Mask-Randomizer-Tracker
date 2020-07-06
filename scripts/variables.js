@@ -152,6 +152,19 @@ var progressiveItems = {
     }
 }
 
+var bottleScoops = {
+    "Spring water": 0,
+    "Hot spring water": 0,
+    "Fish": 0,
+    "Bug": 0,
+    "Fairy": 0,
+    "Mushroom": 0,
+    "Zora egg": 0,
+    "Deku princess": 0,
+    "Poe": 0,
+    "Big poe": 0
+}
+
 var options = {
     'sprites': '3ds'
 }

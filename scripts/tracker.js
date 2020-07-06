@@ -15,6 +15,8 @@ $(".sprite").click(function() { // Takes action when an item is clicked
     // Checks if the selected item is a progressive item
     if (progressiveItems[$(this)[0].name] !== undefined) {
         incrementProgressiveItem($(this), progressiveItems[$(this)[0].name]);
+    } else if (bottleScoops[$(this)[0].name] !== undefined) {
+        incrementBottleValue($(this));
     } else { // If no matches are found it will toggle like a regular item
         toggleItem($(this));
     }
@@ -74,4 +76,62 @@ function incrementProgressiveItem(element, progressiveInfo) { // Increments a pr
         element.css(enabled);
         element.attr("src", "images/"+ options.sprites +"_sprites/"+ progressiveInfo["image"] +"_"+ currentCount +".png")
     }
+}
+
+function incrementBottleValue(element) {
+    var itemName = element[0].name;
+    var currentCount = bottleScoops[itemName];
+
+    // increments value
+    currentCount++;
+    if (currentCount > 10) {
+        currentCount = 0
+    }
+    bottleScoops[itemName] = currentCount;
+
+    var image;
+    switch(currentCount) {
+        case 1:
+            image = "bottle_water"
+        break;
+        case 2:
+            image = "bottle_hot_spring_water"
+        break;
+        case 3:
+            image = "bottle_fish"
+        break;
+        case 4:
+            image = "bottle_bug"
+        break;
+        case 5:
+            image = "bottle_fairy"
+        break;
+        case 6:
+            image = "bottle_mushroom"
+        break;
+        case 7:
+            image = "bottle_zora_egg"
+        break;
+        case 8:
+            image = "bottle_deku_princess"
+        break;
+        case 9:
+            image = "bottle_poe"
+        break;
+        case 10:
+            image = "bottle_big_poe"
+        break;
+        default:
+            image = "bottle_empty"
+        break;
+    }
+
+    if (currentCount === 0) {
+        element.attr("src", "images/"+ options.sprites +"_sprites/"+ image +".png")
+        element.css(disabled);
+    } else {
+        element.attr("src", "images/"+ options.sprites +"_sprites/"+ image +".png")
+        element.css(enabled);
+    }
+
 }
