@@ -27,12 +27,12 @@ $("#bottleToggleButton").click(function() { // Takes action when de spring water
     if (!bottleTracker) {
         $(".miscellaneous-tracker").css("display", "none");
         $(".scoop-tracker").css("display", "flex");
-        $("#bottleToggleButton").attr("src", "images/"+ options["sprites"] +"_sprites/fairy_orange.png");
+        $("#bottleToggleButton").attr("src", "images/"+ settings["sprites"] +"_sprites/fairy_orange.png");
         bottleTracker = true;
     } else {
         $(".miscellaneous-tracker").css("display", "flex");
         $(".scoop-tracker").css("display", "none");
-        $("#bottleToggleButton").attr("src", "images/"+ options["sprites"] +"_sprites/bottle_water.png");
+        $("#bottleToggleButton").attr("src", "images/"+ settings["sprites"] +"_sprites/bottle_water.png");
         bottleTracker = false
     }
 });
@@ -71,10 +71,10 @@ function incrementProgressiveItem(element, progressiveInfo) { // Increments a pr
     // Set image
     if (currentCount < 1) {
         element.css(disabled);
-        element.attr("src", "images/"+ options.sprites +"_sprites/"+ progressiveInfo["image"] +".png")
+        element.attr("src", "images/"+ settings.sprites +"_sprites/"+ progressiveInfo["image"] +".png")
     } else {
         element.css(enabled);
-        element.attr("src", "images/"+ options.sprites +"_sprites/"+ progressiveInfo["image"] +"_"+ currentCount +".png")
+        element.attr("src", "images/"+ settings.sprites +"_sprites/"+ progressiveInfo["image"] +"_"+ currentCount +".png")
     }
 }
 
@@ -127,10 +127,10 @@ function incrementBottleValue(element) {
     }
 
     if (currentCount === 0) {
-        element.attr("src", "images/"+ options.sprites +"_sprites/"+ image +".png")
+        element.attr("src", "images/"+ settings.sprites +"_sprites/"+ image +".png")
         element.css(disabled);
     } else {
-        element.attr("src", "images/"+ options.sprites +"_sprites/"+ image +".png")
+        element.attr("src", "images/"+ settings.sprites +"_sprites/"+ image +".png")
         element.css(enabled);
     }
 

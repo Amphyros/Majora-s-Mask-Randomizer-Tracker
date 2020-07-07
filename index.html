@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="content-wrapper">
@@ -20,32 +21,33 @@
                     <div class="setting">
                         <p>3ds models</p>
                         <label class="switch">
-                            <input type="checkbox">
+                            <input id="3dsSprites" type="checkbox" checked>
                             <span class="slider round"></span>
                         </label>
                     </div>
                 </div>
                 <div class="setting-container setting-third">
                     <div class="setting">
-                        <p>Show non-progressive</p>
+                        <p>Bottle randomization</p>
                         <label class="switch">
-                            <input type="checkbox">
+                            <input id="bottleRandomization" type="checkbox">
                             <span class="slider round"></span>
                         </label>
                     </div>
                 </div>
                 <div class="setting-container setting-third">
                     <div class="setting">
-                        <p>Map tracker</p>
+                        <p>Crazy starting items</p>
                         <label class="switch">
-                            <input type="checkbox" disabled>
+                            <input id="crazyStartingItems" type="checkbox">
                             <span class="slider round"></span>
                         </label>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="tracker.html" type="button" class="start-button btn btn-light">Start tracker</a>
+        <button id="startButton" type="button" class="btn btn-light">Start tracker</button>
     </div>
+    <script src="scripts/launcher.js"></script>
 </body>
 </html>

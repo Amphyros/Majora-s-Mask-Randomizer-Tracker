@@ -165,6 +165,6 @@ var bottleScoops = {
     "Big poe": 0
 }
 
-var options = {
-    'sprites': '3ds'
+var settings = {
+    'sprites': 'classic'
 }
