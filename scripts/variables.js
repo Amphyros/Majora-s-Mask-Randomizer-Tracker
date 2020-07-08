@@ -165,6 +165,19 @@ var bottleScoops = {
     "Big poe": 0
 }
 
+var songLocations = {
+    'Song of time': 0,
+    'Song of healing': 0,
+    'Epona\'s song': 0,
+    'Song of soaring': 0,
+    'Song of storms': 0,
+    'Sonata of awakening': 0,
+    'Goron lullaby': 0,
+    'New wave bossa nova': 0,
+    'Elegy of emptyness': 0,
+    'Oath to order': 0
+}
+
 var settings = {
     'sprites': 'classic'
 }
