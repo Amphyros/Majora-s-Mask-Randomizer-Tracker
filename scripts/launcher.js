@@ -63,12 +63,22 @@ function applyOptions(options) {
     if (options["crazyStartingItems"]) {
         toggleItem($('img[name="Ocarina"]'));
         toggleItem($('img[name="Song of time"]'));
+        $("#songOfTimeCheck").css("opacity", 1);
+        songLocations["Song of time"] = 1;
+        $("#songOfHealingCheck").css("opacity", 1);
+        songLocations["Song of healing"] = 1;
     } else {
         toggleItem($('img[name="Ocarina"]'));
         toggleItem($('img[name="Song of time"]'));
         toggleItem($('img[name="Song of soaring"]'));
         incrementProgressiveItem($('img[name="Sword"]'), progressiveItems[$('img[name="Sword"]')[0].name]);
         incrementProgressiveItem($('img[name="Shield"]'), progressiveItems[$('img[name="Shield"]')[0].name]);
+        $("#songOfTimeCheck").css("opacity", 1);
+        songLocations["Song of time"] = 1;
+        $("#songOfHealingCheck").css("opacity", 1);
+        songLocations["Song of healing"] = 1;
+        $("#songOfSoaringCheck").css("opacity", 1);
+        songLocations["Song of soaring"] = 1;
     }
 }
 

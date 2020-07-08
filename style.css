@@ -149,6 +149,7 @@ input:checked + .slider:before {
 
 .tracker-left {
     width: 30%;
+    width: 63vh;
 }
 
 .item-tracker-upper {
@@ -302,9 +303,21 @@ table.kafei-sprites img {
     width: 15%;
 }
 
+.song-sprite-container {
+    position: relative;
+}
+
 .song-tracker img {
     display: block;
     width: 100%;
+}
+
+.song-tracker img.check-note {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 23%;
+    opacity: 0;
 }
 
 #item-name {

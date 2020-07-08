@@ -1,15 +1,27 @@
-/* Placeholder sprite toggle handler */
-// $(".sprite").click(function () {
-//     if ($(this).css('opacity') == '1') {
-//         $(this).css({"opacity": "0.3", "filter": "grayscale(80%)"});
-//     } else {
-//         $(this).css({"opacity": "1", "filter": "grayscale(0%)"});
-//     }
-// });
-
 var enabled = {"opacity": "1", "filter": "grayscale(0%)"}
 var disabled = {"opacity": "0.3", "filter": "grayscale(80%)"}
 var bottleTracker = false;
+
+$(".song-sprite-container").mouseenter(function() {
+    if ($(this).children(".check-note").css("opacity") != 1) {
+        $(this).children(".check-note").css("opacity", "0.5");
+    }
+});
+$(".song-sprite-container").mouseleave(function() {
+    if ($(this).children(".check-note").css("opacity") != 1) {
+        $(this).children(".check-note").css("opacity", "0");
+    }
+});
+$(".check-note").click(function() {
+    var songName = $(this)[0].name.substr(0, $(this)[0].name.indexOf(" check"));
+    if ($(this).css("opacity") != 1) {
+        $(this).css("opacity", "1");
+        songLocations[songName] = 1;
+    } else {
+        $(this).css("opacity", "0.5");
+        songLocations["songName"] = 0;
+    }
+});
 
 $(".sprite").click(function() { // Takes action when an item is clicked
     // Checks if the selected item is a progressive item
@@ -33,7 +45,7 @@ $("#bottleToggleButton").click(function() { // Takes action when de spring water
         $(".miscellaneous-tracker").css("display", "flex");
         $(".scoop-tracker").css("display", "none");
         $("#bottleToggleButton").attr("src", "images/"+ settings["sprites"] +"_sprites/bottle_water.png");
-        bottleTracker = false
+        bottleTracker = false;
     }
 });
 
