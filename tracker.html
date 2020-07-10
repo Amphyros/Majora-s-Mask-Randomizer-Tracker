@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majora's Mask Map Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ed1762a449.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="tracker-content-wrapper content-wrapper">
+        <div class="tracker-left">
+            <div class="item-tracker-upper">
+                <div class="item-tracker-container">
+                    <div class="item-tracker">
+                        <table class="item-sprites">
+                            <tr>
+                                <td><img class="sprite" name="Ocarina" src="images/classic_sprites/ocarina.png" alt="ocarina"></td>
+                                <td><img class="sprite" name="Hero's bow" src="images/classic_sprites/bow.png" alt="bow"></td>
+                                <td><img class="sprite" name="Fire arrow" src="images/classic_sprites/fire_arrow.png" alt="fire arrow"></td>
+                                <td><img class="sprite" name="Ice arrow" src="images/classic_sprites/ice_arrow.png" alt="ice arrow"></td>
+                                <td><img class="sprite" name="Light arrow" src="images/classic_sprites/light_arrow.png" alt="light arrow"></td>
+                            </tr>
+                            <tr>
+                                <td><img class="sprite" name="Bombs" src="images/classic_sprites/bombs.png" alt="bombs"></td>
+                                <td><img class="sprite" name="Bombchu" src="images/classic_sprites/bombchu.png" alt="bombchu"></td>
+                                <td><img class="sprite" name="Deku stick" src="images/classic_sprites/deku_stick.png" alt="deku stick"></td>
+                                <td><img class="sprite" name="Deku nut" src="images/classic_sprites/deku_nut.png" alt="deku nut"></td>
+                                <td><img class="sprite" name="Magic bean" src="images/classic_sprites/magic_bean.png" alt="magic bean"></td>
+                            </tr>
+                            <tr>
+                                <td><img class="sprite" name="Powder keg" src="images/classic_sprites/powder_keg.png" alt="powder keg"></td>
+                                <td><img class="sprite" name="Picto box" src="images/classic_sprites/picto_box.png" alt="picto box"></td>
+                                <td><img class="sprite" name="Lens of truth" src="images/classic_sprites/lens_of_truth.png" alt="lens of truth"></td>
+                                <td><img class="sprite" name="Hookshot" src="images/classic_sprites/hookshot.png" alt="hookshot"></td>
+                                <td><img class="sprite" name="Great fairy's sword" src="images/classic_sprites/great_fairys_sword.png" alt="great fairy sword"></td>
+                            </tr>
+                        </table>
+                        <table class="bottles">
+                            <tr>
+                                <td><img class="sprite" name="Bottle red potion" src="images/classic_sprites/bottle_red_potion.png" alt="empty bottle"></td>
+                                <td><img class="sprite" name="Bottle gold dust" src="images/classic_sprites/bottle_gold_dust.png" alt="empty bottle"></td>
+                                <td><img class="sprite" name="Bottle milk" src="images/classic_sprites/bottle_milk.png" alt="empty bottle"></td>
+                                <td><img class="sprite" name="Bottle chateau Romani" src="images/classic_sprites/bottle_chateau_romani.png" alt="empty bottle"></td>
+                                <td><img class="sprite" name="Bottle empty" src="images/classic_sprites/bottle_empty.png" alt="empty bottle"></td>
+                                <td><img class="sprite" name="Bottle empty 2" src="images/classic_sprites/bottle_empty.png" alt="empty bottle"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="mask-tracker">
+                        <table class="mask-sprites">
+                            <tr>
+                                <td><img class="sprite" name="Postman's hat" src="images/classic_sprites/postmans_hat.png" alt="postmans hat"></td>
+                                <td><img class="sprite" name="All night mask" src="images/classic_sprites/all_night_mask.png" alt="all night mask"></td>
+                                <td><img class="sprite" name="Blast mask" src="images/classic_sprites/blast_mask.png" alt="blast mask"></td>
+                                <td><img class="sprite" name="Stone mask" src="images/classic_sprites/stone_mask.png" alt="stone mask"></td>
+                                <td><img class="sprite" name="Great fairy mask" src="images/classic_sprites/great_fairy_mask.png" alt="great fairy mask"></td>
+                                <td><img class="sprite" name="Deku mask" src="images/classic_sprites/deku_mask.png" alt="deku mask"></td>
+                            </tr>
+                            <tr>
+                                <td><img class="sprite" name="Keaton mask" src="images/classic_sprites/keaton_mask.png" alt="keaton mask"></td>
+                                <td><img class="sprite" name="Bremen mask" src="images/classic_sprites/bremen_mask.png" alt="bremen mask"></td>
+                                <td><img class="sprite" name="Bunny hood" src="images/classic_sprites/bunny_hood.png" alt="bunny hood"></td>
+                                <td><img class="sprite" name="Don Gero's mask" src="images/classic_sprites/don_geros_mask.png" alt="don geros mask"></td>
+                                <td><img class="sprite" name="Mask of scents" src="images/classic_sprites/mask_of_scents.png" alt="mask of scents"></td>
+                                <td><img class="sprite" name="Goron mask" src="images/classic_sprites/goron_mask.png" alt="goron mask"></td>
+                            </tr>
+                            <tr>
+                                <td><img class="sprite" name="Romani's mask" src="images/classic_sprites/romanis_mask.png" alt="romanis mask"></td>
+                                <td><img class="sprite" name="Circus leader's mask" src="images/classic_sprites/circus_leaders_mask.png" alt="circus leaders mask"></td>
+                                <td><img class="sprite" name="Kafei's mask" src="images/classic_sprites/kafeis_mask.png" alt="kafeis mask"></td>
+                                <td><img class="sprite" name="Couple's mask" src="images/classic_sprites/couples_mask.png" alt="couples mask"></td>
+                                <td><img class="sprite" name="Mask of truth" src="images/classic_sprites/mask_of_truth.png" alt="mask of truth"></td>
+                                <td><img class="sprite" name="Zora mask" src="images/classic_sprites/zora_mask.png" alt="zora mask"></td>
+                            </tr>
+                            <tr>
+                                <td><img class="sprite" name="Kamaro's mask" src="images/classic_sprites/kamaros_mask.png" alt="kamaros mask"></td>
+                                <td><img class="sprite" name="Gibdo mask" src="images/classic_sprites/gibdo_mask.png" alt="gibdo mask"></td>
+                                <td><img class="sprite" name="Garo's mask" src="images/classic_sprites/garos_mask.png" alt="garos mask"></td>
+                                <td><img class="sprite" name="Captain's hat" src="images/classic_sprites/captains_hat.png" alt="captains_hat"></td>
+                                <td><img class="sprite" name="Giant's mask" src="images/classic_sprites/giants_mask.png" alt="giants mask"></td>
+                                <td><img class="sprite" name="Fierce deity mask" src="images/classic_sprites/fierce_deity_mask.png" alt="fierce deity"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="gear-item-tracker-container">
+                    <div class="kafei-item-tracker">
+                        <table class="kafei-sprites">
+                            <tr><td><img class="sprite" name="Sword" src="images/classic_sprites/sword.png" alt="sword"></td></tr>
+                            <tr><td><img class="sprite" name="Shield" src="images/classic_sprites/shield.png" alt="shield"></td></tr>
+                            <tr><td><img class="sprite" name="Magic" src="images/classic_sprites/magic.png" alt="magic"></td></tr>
+                            <tr><td><img class="sprite" name="Seahorse" src="images/classic_sprites/bottle_seahorse.png" alt="bottle_seahorse"></td></tr>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="kafei-item-tracker">
+                        <table class="kafei-sprites">
+                            <tr><td><img class="sprite" name="Room key" src="images/classic_sprites/room_key.png" alt="room key"></td></tr>
+                            <tr><td><img class="sprite" name="Letter to Kafei" src="images/classic_sprites/letter_to_kafei.png" alt="letter to kafei"></td></tr>
+                            <tr><td><img class="sprite" name="Pendant of memories" src="images/classic_sprites/pendant_of_memories.png" alt="pendant of memories"></td></tr>
+                            <tr><td><img class="sprite" name="Express mail" src="images/classic_sprites/express_mail.png" alt="express mail"></td></tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="song-tracker">
+                    <div class="song-sprite-container">
+                        <img class="sprite" name="Song of time" src="images/song_sprites/song_of_time.png" alt="Song of time">
+                        <img id="songOfTimeCheck" class="check-note" name="Song of time check" src="images/note.png" alt="check">
+                    </div>
+                    <div class="song-sprite-container">
+                        <img class="sprite" name="Song of healing" src="images/song_sprites/song_of_healing.png" alt="Song of healing">
+                        <img id="songOfHealingCheck" class="check-note" name="Song of healing check" src="images/note.png" alt="check">
+                    </div>
+                    <div class="song-sprite-container">
+                        <img class="sprite" name="Epona's song" src="images/song_sprites/eponas_song.png" alt="Eponas song">
+                        <img id="eponasSong" class="check-note" name="Epona's song check" src="images/note.png" alt="check">
+                    </div>
+                    <div class="song-sprite-container">
+                        <img class="sprite" name="Song of soaring" src="images/song_sprites/song_of_soaring.png" alt="Song of soaring">
+                        <img id="songOfSoaringCheck" class="check-note" name="Song of soaring check" src="images/note.png" alt="check">
+                    </div>
+                    <div class="song-sprite-container">
+                        <img class="sprite" name="Song of storms" src="images/song_sprites/song_of_storms.png" alt="Song of storms">
+                        <img id="songOfStormsCheck" class="check-note" name="Song of storms check" src="images/note.png" alt="check">
+                    </div>
+                    <div class="song-sprite-container">
+                        <img class="sprite" name="Sonata of awakening" src="images/song_sprites/sonata_of_awakening.png" alt="Sonata of awakening">
+                        <img id="sonataOfAwakeningCheck" class="check-note" name="Sonata of awakening check" src="images/note.png" alt="check">
+                    </div>
+                    <div class="song-sprite-container">
+                        <img class="sprite" name="Goron lullaby" src="images/song_sprites/goron_lullaby.png" alt="Goron lullaby">
+                        <img id="goronLullabyCheck" class="check-note" name="Goron lullaby check" src="images/note.png" alt="check">
+                    </div>
+                    <div class="song-sprite-container">
+                        <img class="sprite" name="New wave bossa nova" src="images/song_sprites/new_wave_bossa_nova.png" alt="New wave bossa nova">
+                        <img id="newWaveBossaNovaCheck" class="check-note" name="New wave bossa nova check" src="images/note.png" alt="check">
+                    </div>
+                    <div class="song-sprite-container">
+                        <img class="sprite" name="Elegy of emptyness" src="images/song_sprites/elegy_of_emptiness.png" alt="Elegy of emptiness">
+                        <img id="elegyOfEmptyness" class="check-note" name="Elegy of emptyness check" src="images/note.png" alt="check">
+                    </div>
+                    <div class="song-sprite-container">
+                        <img class="sprite" name="Oath to order" src="images/song_sprites/oath_to_order.png" alt="Oath to order">
+                        <img id="oathToOrder" class="check-note" name="Oath to order check" src="images/note.png" alt="check">
+                    </div>
+                </div>
+            </div>
+            <div class="item-tracker-lower">
+                <img id="bottleToggleButton" src="images/classic_sprites/bottle_water.png" alt="Bottle_toggle">
+                <div class="miscellaneous-tracker">
+                    <div class="miscellaneous deeds">
+                        <img class="sprite" name="Moon's tear" src="images/classic_sprites/moons_tear.png" alt="moons tear">
+                        <img class="sprite" name="Town deed" src="images/classic_sprites/town_deed.png" alt="town deed">
+                        <img class="sprite" name="Swamp deed" src="images/classic_sprites/swamp_deed.png" alt="swamp deed">
+                        <img class="sprite" name="Mountain deed" src="images/classic_sprites/mountain_deed.png" alt="mountain deed">
+                        <img class="sprite" name="Ocean deed" src="images/classic_sprites/ocean_deed.png" alt="ocean deed">
+                    </div>
+                    <div class="miscellaneous">
+                        <img class="sprite" name="Swamp skulltula" src="images/classic_sprites/skulltula_swamp.png" alt="swamp skulltula">
+                        <img class="sprite" name="Ocean skulltula" src="images/classic_sprites/skulltula_ocean.png" alt="ocean skulltula">
+                        <img class="sprite" name="Town fairy" src="images/classic_sprites/fairy_orange.png" alt="orange fairy">
+                        <img class="sprite" name="Bomber's notebook" src="images/classic_sprites/bombers_notebook.png" alt="bombers notebook">
+                    </div>
+                    <div class="miscellaneous dungeon">
+                        <img class="sprite" name="Odolwa's remains" src="images/classic_sprites/odolwas_remains.png" alt="odolwas remains">
+                        <img class="sprite" name="WFT small key" src="images/classic_sprites/small_key.png" alt="small key">
+                        <img class="sprite" name="WFT boss key" src="images/classic_sprites/boss_key.png" alt="boss key">
+                        <img class="sprite" name="WFT fairy" src="images/classic_sprites/fairy_pink.png" alt="pink fairy">
+                    </div>
+                    <div class="miscellaneous dungeon">
+                        <img class="sprite" name="Goht's remains" src="images/classic_sprites/gohts_remains.png" alt="gohts remains">
+                        <img class="sprite" name="SHT small key" src="images/classic_sprites/small_key.png" alt="small key">
+                        <img class="sprite" name="SHT boss key" src="images/classic_sprites/boss_key.png" alt="boss key">
+                        <img class="sprite" name="SHT fairy" src="images/classic_sprites/fairy_green.png" alt="green fairy">
+                    </div>
+                    <div class="miscellaneous dungeon">
+                        <img class="sprite" name="Gyorg's remains" src="images/classic_sprites/gyorgs_remains.png" alt="gyorgs remains">
+                        <img class="sprite" name="GBT small key" src="images/classic_sprites/small_key.png" alt="small key">
+                        <img class="sprite" name="GBT boss key" src="images/classic_sprites/boss_key.png" alt="boss key">
+                        <img class="sprite" name="GBT fairy" src="images/classic_sprites/fairy_blue.png" alt="blue fairy">
+                    </div>
+                    <div class="miscellaneous dungeon">
+                        <img class="sprite" name="Twinmold's remains" src="images/classic_sprites/twinmolds_remains.png" alt="twinmolds remains">
+                        <img class="sprite" name="STT small key" src="images/classic_sprites/small_key.png" alt="small key">
+                        <img class="sprite" name="STT boss key" src="images/classic_sprites/boss_key.png" alt="boss key">
+                        <img class="sprite" name="STT fairy" src="images/classic_sprites/fairy_yellow.png" alt="yellow fairy">
+                    </div>
+                </div>
+                <div class="scoop-tracker">
+                    <div class="miscellaneous scoops">
+                        <div class="scoop">
+                            <img src="images/classic_sprites/bottle_water.png" alt="bottle water">
+                            <i class="fas fa-arrow-right"></i>
+                            <img class="sprite" name="Spring water" src="images/classic_sprites/bottle_empty.png" alt="bottle">
+                        </div>
+                        <div class="scoop">
+                            <img src="images/classic_sprites/bottle_hot_spring_water.png" alt="bottle hot spring water">
+                            <i class="fas fa-arrow-right"></i>
+                            <img class="sprite" name="Hot spring water" src="images/classic_sprites/bottle_empty.png" alt="bottle">
+                        </div>
+                    </div>
+                    <div class="miscellaneous scoops">
+                        <div class="scoop">
+                            <img src="images/classic_sprites/bottle_fish.png" alt="bottle fish">
+                            <i class="fas fa-arrow-right"></i>
+                            <img class="sprite" name="Fish" src="images/classic_sprites/bottle_empty.png" alt="bottle">
+                        </div>
+                        <div class="scoop">
+                            <img src="images/classic_sprites/bottle_bug.png" alt="bottle bug">
+                            <i class="fas fa-arrow-right"></i>
+                            <img class="sprite" name="Bug" src="images/classic_sprites/bottle_empty.png" alt="bottle">
+                        </div>
+                    </div>
+                    <div class="miscellaneous scoops">
+                        <div class="scoop">
+                            <img src="images/classic_sprites/bottle_fairy.png" alt="bottle fairy">
+                            <i class="fas fa-arrow-right"></i>
+                            <img class="sprite" name="Fairy" src="images/classic_sprites/bottle_empty.png" alt="bottle">
+                        </div>
+                        <div class="scoop">
+                            <img src="images/classic_sprites/bottle_mushroom.png" alt="bottle mushroom">
+                            <i class="fas fa-arrow-right"></i>
+                            <img class="sprite" name="Mushroom" src="images/classic_sprites/bottle_empty.png" alt="bottle">
+                        </div>
+                    </div>
+                    <div class="miscellaneous scoops">
+                        <div class="scoop">
+                            <img src="images/classic_sprites/bottle_zora_egg.png" alt="bottle zora egg">
+                            <i class="fas fa-arrow-right"></i>
+                            <img class="sprite" name="Zora egg" src="images/classic_sprites/bottle_empty.png" alt="bottle">
+                        </div>
+                        <div class="scoop">
+                            <img src="images/classic_sprites/bottle_deku_princess.png" alt="bottle deku princess">
+                            <i class="fas fa-arrow-right"></i>
+                            <img class="sprite" name="Deku princess" src="images/classic_sprites/bottle_empty.png" alt="bottle">
+                        </div>
+                    </div>
+                    <div class="miscellaneous scoops">
+                        <div class="scoop">
+                            <img src="images/classic_sprites/bottle_poe.png" alt="bottle poe">
+                            <i class="fas fa-arrow-right"></i>
+                            <img class="sprite" name="Poe" src="images/classic_sprites/bottle_empty.png" alt="bottle">
+                        </div>
+                        <div class="scoop">
+                            <img src="images/classic_sprites/bottle_big_poe.png" alt="bottle big poe">
+                            <i class="fas fa-arrow-right"></i>
+                            <img class="sprite" name="Big poe" src="images/classic_sprites/bottle_empty.png" alt="bottle">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tracker-right">
+
+        </div>
+    </div>
+    <script src="scripts/variables.js"></script>
+    <script src="scripts/tracker.js"></script>
+    <script src="scripts/launcher.js"></script>
+</body>
+</html>

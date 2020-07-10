@@ -1,0 +1,389 @@
+/*Defaults*/
+* { margin: 0 }
+
+h1, h2, h3, h4, h5, h6, p, a, li {
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: #282828;
+    font-family: 'Fira Sans', sans-serif;
+    color: #fff;
+}
+
+.content-wrapper {
+    margin: 10px;
+}
+
+/*Settings page*/
+
+h1.home-title {
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 3rem;
+}
+
+.logo-container {
+    margin: 0 auto;
+    width: 268px;
+}
+
+.settings-wrapper {
+    background: #111;
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid #666;
+    padding: 10px;
+}
+
+.settings-wrapper h2 {
+    text-align: center;
+}
+
+.settings-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.setting-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.setting-half {
+    width: 50%;
+}
+
+.setting-third {
+    width: 100%;
+}
+
+.setting {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+#startButton {
+    margin: 50px auto;
+    display: table;
+    font-size: 2.5rem;
+    padding: 0 50px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #000!important;
+}
+
+p.credits {
+    color: #C8C8C8;
+    font-size: 0.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+p.credits a {
+    color: #C8C8C8;
+    text-decoration: underline;
+}
+
+p.credits a:hover {
+    color: #969696
+}
+
+ /* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+} 
+
+/*Tracker page*/
+
+.tracker-content-wrapper {
+    display: flex;
+}
+
+.tracker-left {
+    width: 30%;
+    width: 63vh;
+}
+
+.item-tracker-upper {
+    display: flex;
+}
+
+.item-tracker-lower {
+    width: 100%;
+    position: relative;
+}
+
+.item-tracker-container {
+    width: 70%;
+    background: #396b62;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*- Dynamic tables -*/
+
+.item-tracker, .mask-tracker {
+    width: 100%;
+    position: relative;
+    background-image: url('images/item_inventory_edited.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1% 1%;
+}
+
+.mask-tracker {
+    background-image: url('images/mask_inventory.png');
+}
+
+table.item-sprites {
+    width: 100%;
+}
+
+table.item-sprites td {
+    width: 20%;
+    text-align:center;
+}
+
+table.item-sprites img {
+    width: 79%;
+    padding: 10% 0;
+}
+
+table.bottles {
+    width: 100%;
+}
+
+table.bottles td {
+    text-align: center;
+}
+
+table.bottles img {
+    width: 90%;
+    padding: 17% 0;
+}
+
+table.mask-sprites {
+    width: 100%;
+}
+
+table.mask-sprites td {
+    text-align: center;
+}
+
+table.mask-sprites img {
+    width: 82%;
+    padding: 19% 0;
+}
+
+.gear-item-tracker-container {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.kafei-item-tracker {
+    background-image: url('images/item_row.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100% 100%;
+    padding: 13% 0;
+}
+
+table.kafei-sprites {
+    width: 100%;
+}
+
+table.kafei-sprites img {
+    width: 68%;
+    padding: 10% 0;
+    margin: 0 auto;
+}
+
+.kafei-item-tracker img {
+    display: block;
+    width: 100%;
+}
+
+.miscellaneous-tracker {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.scoop-tracker {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.miscellaneous {
+    background-image: url('images/item_row_horizontal_1.png');
+    background-size: 100% 100%;
+    width: 50%;
+    padding: 2% 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scoops {
+    background-image: url('images/item_row_horizontal_2.png');
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2% 0;
+}
+
+.scoop {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.miscellaneous img {
+    width: 20%;
+}
+
+.scoops img {
+    width: 39%;
+}
+
+.scoops i {
+    font-size: 1.5rem;
+    color: #baa976;
+}
+
+/*- Dynamic tables end -*/
+
+.song-tracker {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.song-sprite-container {
+    position: relative;
+}
+
+.song-tracker img {
+    display: block;
+    width: 100%;
+}
+
+.song-tracker img.check-note {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 23%;
+    opacity: 0;
+}
+
+#item-name {
+    font-size: 100%;
+    text-align: center;
+}
+
+#bottleToggleButton {
+    width: 8%;
+    position: absolute;
+    top: 22%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.8;
+    filter: grayscale(50%);
+} #bottleToggleButton:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.sprite {
+    opacity: 0.3;
+    filter: grayscale(80%);
+    cursor: pointer;
+}
+
+/* Media queries */
+
+/*Home page*/
+
+@media screen and (max-width: 620px) {
+    .settings-wrapper {
+        width: 320px;
+    }
+
+    .setting {
+        font-size: 1.3rem;
+    }
+}
