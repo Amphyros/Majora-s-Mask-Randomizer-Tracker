@@ -34,7 +34,7 @@ h1.home-title {
 
 .settings-wrapper {
     background: #111;
-    width: 80%;
+    width: 600px;
     margin: 0 auto;
     border-radius: 5px;
     border: 1px solid #666;
@@ -60,15 +60,16 @@ h1.home-title {
 }
 
 .setting-third {
-    width: 33.333%;
+    width: 100%;
 }
 
 .setting {
     display: flex;
-    width: 80%;
+    width: 90%;
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
+    margin: 0 auto;
 }
 
 #startButton {
@@ -355,4 +356,18 @@ table.kafei-sprites img {
     opacity: 0.3;
     filter: grayscale(80%);
     cursor: pointer;
+}
+
+/* Media queries */
+
+/*Home page*/
+
+@media screen and (max-width: 620px) {
+    .settings-wrapper {
+        width: 320px;
+    }
+
+    .setting {
+        font-size: 1.3rem;
+    }
 }

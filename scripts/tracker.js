@@ -39,7 +39,7 @@ $("#bottleToggleButton").click(function() { // Takes action when de spring water
     if (!bottleTracker) {
         $(".miscellaneous-tracker").css("display", "none");
         $(".scoop-tracker").css("display", "flex");
-        $("#bottleToggleButton").attr("src", "images/"+ settings["sprites"] +"_sprites/fairy_orange.png");
+        $("#bottleToggleButton").attr("src", "images/"+ settings["sprites"] +"_sprites/bombers_notebook.png");
         bottleTracker = true;
     } else {
         $(".miscellaneous-tracker").css("display", "flex");
