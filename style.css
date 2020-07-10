@@ -82,6 +82,22 @@ h1.home-title {
     color: #000!important;
 }
 
+p.credits {
+    color: #C8C8C8;
+    font-size: 0.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+p.credits a {
+    color: #C8C8C8;
+    text-decoration: underline;
+}
+
+p.credits a:hover {
+    color: #969696
+}
+
  /* The switch - the box around the slider */
 .switch {
     position: relative;
