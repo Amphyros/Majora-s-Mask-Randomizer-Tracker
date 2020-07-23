@@ -255,25 +255,68 @@
             </div>
         </div>
         <div class="tracker-right">
-            <div class="map-tracker-top">
-                <img class="termina-map" src="images/MM3D_Termina_Map_Artwork.png" alt="Termina map">
-                <div id="greatBayMapSection" class="map-section">
-                    <img src="images/great_bay_coast_map.png" alt="great bay section">
-                </div>
-                <div id="mountainMapSection" class="map-section">
-                    <img src="images/mountains_map.png" alt="mountain section">
-                </div>
+            <div id="map-tracker-top">
+                <img class="map-background" src="images/MM3D_Termina_Map_Artwork.png" alt="Termina map">
                 <div id="terminaFieldMapSection" class="map-section">
                     <img src="images/termina_field_map.png" alt="termina field section">
+                </div>
+                <div id="clockTownMapSection" class="map-section">
+                    <img src="images/clock_town_map.png" alt="southern swamp section">
                 </div>
                 <div id="southernSwampMapSection" class="map-section">
                     <img src="images/southern_swamp_map.png" alt="southern swamp section">
                 </div>
+                <div id="mountainMapSection" class="map-section">
+                    <img src="images/mountains_map.png" alt="mountain section">
+                </div>
+                <div id="greatBayMapSection" class="map-section">
+                    <img src="images/great_bay_coast_map.png" alt="great bay section">
+                </div>
                 <div id="ikanaCanyonMapSection" class="map-section">
                     <img src="images/ikana_canyon_map.png" alt="southern swamp section">
                 </div>
-                <div id="clockTownMapSection" class="map-section">
-                    <img src="images/clock_town_map.png" alt="southern swamp section">
+            </div>
+            <div id="map-tracker-second-level">
+                <div class="selection-container">
+                    <button class="close-button">Close</button>
+                    <div class="area-selection" id="greatBaySelection">
+                        <div class="area-option" id="greatBayCoastOption">
+                            <div class="area-option-text">
+                                <p>Great Bay Coast</p>
+                                <p class="progression">0 / 44</p>
+                            </div>
+                        </div>
+                        <div class="area-option" id="zoraCapeOption">
+                            <div class="area-option-text">
+                                <p>Zora Cape</p>
+                                <p class="progression">0 / 8</p>
+                            </div>
+                        </div>
+                        <div class="area-option" id="zoraHallOption">
+                            <div class="area-option-text">
+                                <p>Zora Hall</p>
+                                <p class="progression">0 / 10</p>
+                            </div>
+                        </div>
+                        <div class="area-option" id="piratesFortressOption">
+                            <div class="area-option-text">
+                                <p>Pirate's Fortress</p>
+                                <p class="progression">0 / 12</p>
+                            </div>
+                        </div>
+                        <div class="area-option" id="pinnacleRockOption">
+                            <div class="area-option-text">
+                                <p>Pinnacle Rock</p>
+                                <p class="progression">0 / 3</p>
+                            </div>
+                        </div>
+                        <div class="area-option" id="greatBayTempleOption">
+                            <div class="area-option-text">
+                                <p>Great Bay Temple</p>
+                                <p class="progression">0 / 21</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -281,5 +324,6 @@
     <script src="scripts/variables.js"></script>
     <script src="scripts/tracker.js"></script>
     <script src="scripts/launcher.js"></script>
+    <script src="scripts/map_layout.js"></script>
 </body>
 </html>

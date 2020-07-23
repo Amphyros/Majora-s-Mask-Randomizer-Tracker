@@ -376,13 +376,15 @@ table.kafei-sprites img {
 
 /*Map tracker*/
 
+/*- Top level -*/
+
 .tracker-right {
     width: 70%;
     max-width: 137vh;
     position: relative;
 }
 
-.termina-map {
+.map-background {
     width: 100%;
 }
 
@@ -444,6 +446,89 @@ table.kafei-sprites img {
     left: 47.3%;
     width: 5.4%;
     border: 1px solid #282828;
+}
+
+/*- Second level -*/
+
+#map-tracker-second-level {
+    display: none;
+    background-image: url("images/selection_map.png");
+    background-size: 100% 100%;
+}
+
+.selection-container {
+    padding: 0 3.3%;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 7%;
+    right: 4%;
+    z-index: 1;
+    background: #cc7115;
+    border: #d5a866 3px outset;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.1vw;
+}
+
+.close-button:focus {
+    outline: 0;
+}
+
+.area-selection {
+    display: flex;
+}
+
+.area-option {
+    width: 100%;
+    padding: 31% 0;
+    margin: 4% 0;
+    background-size: auto 100%;
+    background-position: center;
+    object-fit: cover;
+    box-sizing: border-box;
+    border: #282828 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-option:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.area-option-text {
+    background: rgba(0,0,0,0.6);
+    font-size: 1.1vw;
+    padding: 0 5%;
+    text-align: center;
+}
+
+#greatBayCoastOption {
+    background-image: url("images/previews/great_bay_coast_preview.png");
+}
+
+#zoraCapeOption {
+    background-image: url("images/previews/zora_cape_preview.png");
+}
+
+#zoraHallOption {
+    background-image: url("images/previews/zora_hall_preview.png");
+}
+
+#piratesFortressOption {
+    background-image: url("images/previews/pirates_fortress_preview.png");
+}
+
+#pinnacleRockOption {
+    background-image: url("images/previews/pinnacle_rock_preview.png");
+}
+
+#greatBayTempleOption {
+    background-image: url("images/previews/great_bay_temple_preview.png");
 }
 
 /* Media queries */
